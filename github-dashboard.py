@@ -1,4 +1,5 @@
 import plotly.express as px
+import pandas as pd  # Import pandas
 
 # Sample data
 df = pd.DataFrame({
