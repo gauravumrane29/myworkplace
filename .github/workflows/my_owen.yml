@@ -1,0 +1,27 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run a test script
+        run: |
+          echo "Running test..."
+          # Simulate a test pass/fail with a 50% chance
+          if [ $((RANDOM % 2)) -eq 0 ]; then
+            echo "Test passed!"
+            exit 0
+          else
+            echo "Test failed!"
+            exit 1
+          fi
