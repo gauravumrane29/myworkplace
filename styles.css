@@ -1,0 +1,155 @@
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* .table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border: 2px solid #dddddde6;
+} */
+
+.bordered-heading {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #4CAF50;
+    margin: 0;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 12px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.colored-cell {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.button-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-bar .expand-btn {
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-bar .expand-btn.rounded {
+    border-radius: 5px;
+}
+
+.button-bar .expand-btn:hover {
+    box-shadow: 4px 4px 10px rgba(205, 12, 12, 0.5);
+}
+
+.dashboard {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Reduced margin  */
+    padding: 10px; /* Reduced padding  */
+    border-radius: 10px;
+    background-color: #15d0e8;
+    margin: 10px; /* Reduced margin if needed */
+    
+}
+
+.dashboard-heading {
+    display: flex;
+    align-items: center;
+    font-size: 2em; /* Reduced font size  if needed*/
+    justify-content: center; /* Center the heading if needed */
+    padding-bottom: 5px;
+    margin-bottom: 5px; /* Reduced margin if needed */
+    color: #070707; 
+    
+}
+
+.dashboard-heading i {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 0.8em; /* Adjust this value to reduce the size of the icon if needed */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.badge-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.badge-container a img {
+    transition: transform 0.2s;
+}
+
+.badge-container a img:hover {
+    transform: scale(1.1);
+}
+
+.details {
+    display: none;
+}
+
+.expand-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.expand-btn img {
+    margin-right: 8px; /* Add space between the image and text if needed */
+    vertical-align: middle;
+}
+
+.table-style.rounded {
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden;  /* Hide the overflow */
+}
+.table-container {
+    width: 100%;
+    max-width: 2000px; /* Set the maximum width of the table container */
+}
+.badge-link {
+    display: inline-block;
+    text-decoration: none;
+}
+.badge-image {
+    display: block;
+}
