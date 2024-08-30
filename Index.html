@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard with Expandable Details</title>
+        <link rel="stylesheet" href="styles.css">
+    
+        <body onload="loadBadges()">
+                <div class="dashboard">
+                    <h1 class="dashboard-heading"><img src="images/dashboard.png" alt="Metrics Icon" class="dashboard-icon" style="width: 50px; height: 50px; margin-right: 10px;">Metrics Dashboard <i class="fas fa-chart-line"></i></h1>
+                
+                    <div class="button-bar">
+                        <link rel="stylesheet" href="styles.css">
+                        <button class="expand-btn rounded" onclick="toggleDetails('details1')">
+                            <img src="images/auto_group.png" alt="Auto" style="width: 30px; height: 30px;"> Auto
+                        </button>
+                        <button class="expand-btn rounded" onclick="toggleDetails('details2')">
+                            <img src="images/CBU.png" alt="Commerical (CBU)" style="width: 30px; height: 30px;"> Commercial (CBU)
+                        </button>
+                        <button class="expand-btn rounded" onclick="toggleDetails('details3')">
+                            <img src="images/RBU.png" alt="Residential (RBU)" style="width: 30px; height: 30px;"> Residential (RBU)
+                        </button>
+                        <button class="expand-btn rounded" onclick="toggleDetails('details4')">
+                            <img src="images/ACS.png" alt="ACS" style="width: 30px; height: 30px;"> ACS(Access Control System)
+                        </button>
+                        <button class="expand-btn rounded" onclick="toggleDetails('details5')">
+                            <img src="images/devops.png" alt="FW_Platform & Devops" style="width: 30px; height: 30px;"> FW_Platform & Devops
+                        </button>
+                    
+                        <div class="details-section">
+                            <div class="details" id="details4">
+                                <div class="center-container">
+                                    <div class="table-container">
+                                        <h1 class="bordered-heading">ACS</h1>
+                                        <div id="metrics4">
+                                            <table class="table-style rounded">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="colored-cell">Development Environment</th>
+                                                        <th class="colored-cell">Sonarqube</th>
+                                                        <th class="colored-cell">Developer Productive Tool</th>
+                                                        <th class="colored-cell">Pull Request Templatet</th>
+                                                        <th class="colored-cell">FOSSA Workflow</th>
+                                                        <th class="colored-cell">Pull Request Workflow</th>
+                                                        <th class="colored-cell">Release Deployment</th>
+                                                        <th class="colored-cell">CODEOWNERS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>No Superrepo yet</td>
+                                                        <td></td>
+                                                        <td><!--C++ & Sonarlint--></td>
+                                                        <td><!--PR Template--></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href=""></a></td>
+                                                        <td></td>
+                                                        <td><!--C++ & Sonarlint--></td>
+                                                        <td><!--PR Template-->Enabled</td>
+                                                        <td><div class="badge-container"></div></td>
+                                                        <td><div class="badge-container"></div></td>
+                                                        <td><div class="badge-container"></div></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <script src="badges.js">
+            document.addEventListener('DOMContentLoaded', loadBadges);
+        </script>
+        </body>
+    </head>
+</html>
