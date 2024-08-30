@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "Running test..."
           # Simulate a test pass/fail with a 50% chance
-          if [ $((RANDOM % 2)) -eq 0 ]; then
+          if [ $((RANDOM % 2)) -eq 1 ]; then
             echo "Test passed!"
             exit 0
           else
