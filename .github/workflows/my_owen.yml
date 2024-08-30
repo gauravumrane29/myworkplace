@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+  
   pull_request:
 
 jobs:
@@ -17,11 +19,6 @@ jobs:
       - name: Run a test script
         run: |
           echo "Running test..."
-          # Simulate a test pass/fail with a 50% chance
-          if [ $((RANDOM % 2)) -eq 1 ]; then
-            echo "Test passed!"
-            exit 0
-          else
-            echo "Test failed!"
-            exit 1
-          fi
+          # Force the test to fail
+          echo "Test failed!"
+          exit 1
